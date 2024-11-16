@@ -30,7 +30,7 @@ public class DataParser {
 		return employeeManagerMap;
 	}
 
-	public void parser(String fileName) throws IOException {
+	public void parser(String fileName) throws IOException, NullPointerException {
 
 		String filePath = Objects.requireNonNull(getClass().getClassLoader().getResource(fileName)).getPath();
 		FileReader filereader = new FileReader(filePath);
